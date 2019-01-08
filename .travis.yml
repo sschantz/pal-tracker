@@ -1,7 +1,14 @@
 dist: trusty
 sudo: false
+
 notifications:
-  email: shawn.schantz@t-mobile.com, pavanimyneni@t-mobile.com
+  email:
+    recipients:
+      - shawn.schantz@t-mobile.com
+      - pavanimyneni@t-mobile.com
+    on_success: always # default: change
+    on_failure: always # default: alwaysnotifications:
+
 env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
 if: tag IS blank
