@@ -1,7 +1,7 @@
 dist: trusty
 sudo: false
 notifications:
-  email: false
+  email: shawn.schantz@t-mobile.com, pavanimyneni@t-mobile.com
 env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
 if: tag IS blank
